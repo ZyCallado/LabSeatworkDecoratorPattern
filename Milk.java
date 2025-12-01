@@ -1,18 +1,18 @@
 public class Milk implements CoffeeDecorator {
-    private Coffee coffee;
+    private Coffee wrappedCoffee;
 
     @Override
     public void setCoffee(Coffee coffee) {
-        this.coffee = coffee;
+        wrappedCoffee = coffee;
     }
 
     @Override
     public String getDescription() {
-        return coffee.getDescription() + ", Milk";
+        return wrappedCoffee.getDescription() + ", Milk";
     }
 
     @Override
     public String getCost() {
-        return coffee.getCost() + " + ₱25.00";
+        return wrappedCoffee.getCost() + " + ₱25.00";
     }
 }
