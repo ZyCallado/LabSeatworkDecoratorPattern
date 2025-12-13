@@ -1,1 +1,1 @@
-# LabSeatworkDecoratorPattern
+# Lab Seatwork Decorator Pattern
